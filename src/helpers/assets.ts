@@ -2,8 +2,8 @@
 
 
 export const ASSETS = {
-    americaFav: '/icons/america.svg',
-    americaImage: '/images/america.svg',
+    Fav: '/icons/favicon.ico',
+    Image: '/images/logo.png',
 
     
 }

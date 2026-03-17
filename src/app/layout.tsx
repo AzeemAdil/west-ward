@@ -1,11 +1,22 @@
+
+
+
 import '@/styles/globals.scss';
 import ConfigWrapper from "@/common/configWrapper";
 import { Metadata } from "next/types";
 import { ASSETS } from '@/helpers/assets';
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
+
 
 const baseURL = "https://test.com";
 const pageUrl = `${baseURL}/`;
-const pageImage = `${baseURL}${ASSETS.americaImage}`;
+const pageImage = `${baseURL}${ASSETS.Image}`;
 const title = `Title`;
 const description = "description";
 
@@ -46,7 +57,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body >
+			<body className={roboto.className} >
 				<ConfigWrapper>
 					{children}
 				</ConfigWrapper>

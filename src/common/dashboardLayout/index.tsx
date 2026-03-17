@@ -43,7 +43,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
             <div className="w-full h-full p-4 flex flex-col">
                 <div className="w-full h-[60px] flex justify-between items-center lg:justify-end">
                     <Image
-                        src={resolvedTheme === "dark" ? ASSETS.americaFav : ASSETS.americaFav}
+                        src={resolvedTheme === "dark" ? ASSETS.Fav : ASSETS.Fav}
                         alt='logo'
                         width={120}
                         height={120}
@@ -61,7 +61,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
                         >
                             {user?.firstName} {user?.lastName}
                             <Avatar
-                                src={ASSETS.americaFav}
+                                src={ASSETS.Fav}
                                 alt='avatar'
                             />
                         </Button>
@@ -99,7 +99,7 @@ const DashboardLayout = ({ children }: { children: React.ReactNode }) => {
                     <div className="flex justify-center items-center">
                         <IconButton onClick={() => router.push("/app/create-new-reel")}>
                             <Image
-                                src={pathName === "/app/create-new-reel" ? ASSETS.americaFav : ASSETS.americaFav}
+                                src={pathName === "/app/create-new-reel" ? ASSETS.Fav : ASSETS.Fav}
                                 alt='favIcon'
                                 width={40}
                                 height={40}

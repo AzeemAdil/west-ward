@@ -1,9 +1,11 @@
-import HomePage from '@/components/home'
 import React from 'react'
+import NavBar from '@/components/home/NavBar'
 
 const page = () => {
   return (
-    <HomePage />
+    <>
+      <NavBar />
+    </>
   )
 }
 
