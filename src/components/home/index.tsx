@@ -1,78 +1,11 @@
 import React from 'react'
 import NavBar from './NavBar'
+import VideoPlayerSection from './VideoPlayerSection'
 const Home = () => {
   return (
     <>
     <NavBar />
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    <h1>hello</h1>
-    
-
+    <VideoPlayerSection />
     </>
   )
 }

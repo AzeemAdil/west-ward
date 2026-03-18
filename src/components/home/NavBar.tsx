@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { ASSETS } from "../../helpers/assets";
+import { CONSTANTS } from "../../helpers/constants";
 
 const NavBar = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -24,14 +25,20 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="w-full bg-primary h-[45px] flex justify-center items-center  gap-4 lg:gap-52 text-[8px] md:text-sm ">
+      <nav 
+        className="w-full bg-primary flex justify-center items-center  gap-4 lg:gap-52 text-[8px] md:text-sm "
+        style={{ height: CONSTANTS.navWithListofTextHeight }}
+      >
         <span className="text-text-secondary">PET-FRIENDLY</span>
         <span className="text-text-secondary">
           STUDIO TO 3-BEDROOM RENTAL HOMES
         </span>
         <span className="text-text-secondary">COMING SOON</span>
       </nav>
-      <nav className="w-full bg-primary flex justify-center pt-3 pb-7 lg:hidden items-center">
+      <nav 
+        className="w-full bg-primary flex justify-center lg:hidden items-center"
+        style={{ height: CONSTANTS.mobNavWithLogo }}
+      >
         <img
           src={ASSETS.WestWardLogoRed}
           alt="west-ward"
@@ -40,7 +47,8 @@ const NavBar = () => {
       </nav>
       <nav 
         ref={navRef}
-        className=" w-full h-[50px] bg-background-paper flex justify-center items-center sticky top-0 z-50 transition-colors lg:hidden"
+        className=" w-full bg-background-paper flex justify-center items-center sticky top-0 z-50 transition-colors lg:hidden"
+        style={{ height: CONSTANTS.mobNavSticky }}
       >
         <span className="text-primary text-sm mt-[3px] mr-2 transition-all" >
           {isSticky ? "REGISTER NOW" : "COMING SOON"}  
@@ -48,10 +56,8 @@ const NavBar = () => {
         <img src={ASSETS.ArrowLeft} className=" size-3" alt="arrow-left"  />
       </nav>
       <nav
-        className="w-full h-[100px] bg-white hidden lg:flex  px-5 py-8  "
-        style={{
-          border: "1px solid red",
-        }}
+        className="w-full bg-white hidden lg:flex  px-5 py-8  "
+        style={{ height: CONSTANTS.desktopNav }}
       >
         <div className="flex-1" >
           <img src={ASSETS.WestWardLogoRed} alt="west-ward" className="h-full" />
