@@ -40,7 +40,7 @@ const NavBar = () => {
         style={{ height: CONSTANTS.mobNavWithLogo }}
       >
         <img
-          src={ASSETS.WestWardLogoRed}
+          src={ASSETS.WestWard}
           alt="west-ward"
           className="w-[180px]"
         />
