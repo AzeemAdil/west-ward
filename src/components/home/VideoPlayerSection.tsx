@@ -14,12 +14,12 @@ const VideoPlayerSection = () => {
         className="w-full relative lg:px-10 px-4"
         style={{
           height: isMob
-            ? `calc(100dvh - ${CONSTANTS.navWithListofTextHeight}px - ${CONSTANTS.mobNavWithLogo}px - ${CONSTANTS.mobNavSticky}px)`
-            : `calc(100dvh - ${CONSTANTS.navWithListofTextHeight}px - ${CONSTANTS.desktopNav}px)`,
+            ? `calc(100vh - ${CONSTANTS.navWithListofTextHeight}px - ${CONSTANTS.mobNavWithLogo}px - ${CONSTANTS.mobNavSticky}px -${CONSTANTS.desktopNav}px )`
+            : `calc(100dvh - ${CONSTANTS.navWithListofTextHeight}px - ${CONSTANTS.desktopNav}px) - ${CONSTANTS.mobNavSticky}px`,
         }}
       >
         {/* desktop view */}
-        <div className="hidden relative lg:block w-full h-[90%]">
+        <div className="hidden relative lg:block w-full h-fit">
           <video
             src={ASSETS.VideoHeader}
             autoPlay
@@ -37,7 +37,7 @@ const VideoPlayerSection = () => {
 
           <div className=" hidden lg:block opacity-75 w-[320px] h-[280px] bg-primary absolute  left-20 bottom-[-55px] pt-14 pl-7 ">
             <span className=" font-bold text-3xl text-white pt-6 pb-2 ">
-              Life in balance <br /> Westward bound.
+              Life in balance. <br /> Westward bound.
             </span>
             <br />
             <p className="text-white text-sm pt-4 mr-4">
@@ -60,8 +60,8 @@ const VideoPlayerSection = () => {
             playsInline
             className="w-full object-cover"
           ></video>
-          <span className=" font-bold text-primary pt-6 pb-2 leading-normal ">
-            Life in balance <br /> Westward bound.
+          <span className=" font-bold text-primary text-2xl pt-6 pb-2 leading-normal ">
+            Life in balance. <br /> Westward bound.
           </span>
           <span className="text-primary text-lg mt-[3px] mr-4">
             REGISTER NOW
