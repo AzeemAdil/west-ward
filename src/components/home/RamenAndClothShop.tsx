@@ -2,7 +2,7 @@ import React from 'react'
 import { ASSETS } from '@/helpers/assets'
 const RamenAndClothShop = () => {
   return (
-    <div className="flex  lg:flex-row justify-center items-center bg-primary " >
+    <div className="flex flex-col-reverse lg:flex-row justify-center items-center bg-primary " >
             <img
             className="w-full lg:w-[50%]"
             src={ASSETS.ClothShop}
