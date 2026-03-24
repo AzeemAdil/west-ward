@@ -6,7 +6,10 @@ import Rentals from './Rentals'
 import Map from './Map'
 import FlowersAndWalk from './FlowersAndWalk'
 import RamenAndClothShop from './RamenAndClothShop'
-const Home = () => {
+import ThreePictureGrid from './ThreePictureGrid'
+import Amenities from './Amenities'
+import Homes from './Homes'
+const Home = () => {  
   return (
     <>
     <NavBar />
@@ -15,8 +18,9 @@ const Home = () => {
     <Rentals/>  
     <Map/>
     <FlowersAndWalk/>
-
-
+    <ThreePictureGrid/>
+    <Amenities/>
+    <Homes/>
     
     <RamenAndClothShop/>
     </>
