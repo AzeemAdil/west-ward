@@ -15,6 +15,9 @@ const Home = () => {
     <Rentals/>  
     <Map/>
     <FlowersAndWalk/>
+
+
+    
     <RamenAndClothShop/>
     </>
   )

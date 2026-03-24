@@ -26,7 +26,7 @@ const NavBar = () => {
   return (
     <>
       <nav 
-        className="w-full bg-primary flex justify-center items-center  gap-4 lg:gap-52 text-[8px] md:text-sm "
+        className="w-full bg-primary flex justify-center items-center  gap-4 lg:gap-48 text-[8px] md:text-sm "
         style={{ height: CONSTANTS.navWithListofTextHeight }}
       >
         <span className="text-text-secondary">PET-FRIENDLY</span>
@@ -56,7 +56,7 @@ const NavBar = () => {
         <img src={ASSETS.ArrowLeft} className=" size-3" alt="arrow-left"  />
       </nav>
       <nav
-        className="w-full bg-white hidden lg:flex  px-5 py-8  "
+        className="w-full bg-white hidden lg:flex  px-12 py-8  "
         style={{ height: CONSTANTS.desktopNav }}
       >
         <div className="flex-1" >

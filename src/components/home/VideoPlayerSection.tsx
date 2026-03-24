@@ -14,12 +14,12 @@ const VideoPlayerSection = () => {
         className="w-full relative lg:px-10 px-4"
         style={{
           height: isMob
-            ? `calc(100vh - ${CONSTANTS.navWithListofTextHeight}px - ${CONSTANTS.mobNavWithLogo}px - ${CONSTANTS.mobNavSticky}px -${CONSTANTS.desktopNav}px )`
-            : `calc(100dvh - ${CONSTANTS.navWithListofTextHeight}px - ${CONSTANTS.desktopNav}px) - ${CONSTANTS.mobNavSticky}px`,
+            ? `calc(100dvh - ${CONSTANTS.navWithListofTextHeight}px - ${CONSTANTS.mobNavWithLogo}px - ${CONSTANTS.mobNavSticky}px - ${CONSTANTS.desktopNav}px )`
+            : `calc(100dvh - ${CONSTANTS.navWithListofTextHeight}px - ${CONSTANTS.desktopNav}px - ${CONSTANTS.mobNavSticky}px)`,
         }}
       >
         {/* desktop view */}
-        <div className="hidden relative lg:block w-full h-fit">
+        <div className="hidden relative lg:block w-full h-full">
           <video
             src={ASSETS.VideoHeader}
             autoPlay

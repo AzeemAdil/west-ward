@@ -3,7 +3,7 @@ import { ASSETS } from "@/helpers/assets";
 
 const Rentals = () => {
   return (
-    <div className=" ">
+    <div>
       <div className=" flex items-baseline ">
         <img
           className="w-full lg:w-[45%] "
@@ -13,18 +13,18 @@ const Rentals = () => {
         <div className=" lg:bg-background-paper lg:w-[55%] h-44  "> </div>
       </div>
 
-      <div className=" lg:bg-background-paper bg-opacity-30 ">
-        <div className=" text-primary text-3xl lg:text-5xl  font-semibold lg:w-full text-center lg:text-center pt-20 lg:pb-16 ">
+      <div className=" lg:bg-background-paper  ">
+        <div className=" text-primary text-3xl lg:text-5xl font-semibold lg:w-full text-center lg:text-center pt-20 lg:pb-16 ">
           Modern Rentals, Classic Kerrisdale.
         </div>
         <img
-            className=" w-[30%] relative top-8 left-16 lg:hidden  lg:relative lg:bottom-72 lg:left-32 "
+            className=" w-[30%] animate-[spin_10s_linear_infinite] relative top-8 left-16 lg:hidden  lg:relative lg:bottom-72 lg:left-32 "
             src={ASSETS.CircleText}
             alt="circle-text-image"
           />
         <div className=" flex justify-between items-center ">
           <img
-            className=" w-[20%] hidden lg:block relative bottom-28 left-10 lg:relative lg:bottom-72 lg:left-32 "
+            className=" w-[20%] hidden lg:block animate-[spin_10s_linear_infinite] relative bottom-28 left-10 lg:relative lg:bottom-72 lg:left-32 "
             src={ASSETS.CircleText}
             alt="circle-text-image"
           />
