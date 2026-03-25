@@ -9,6 +9,8 @@ import RamenAndClothShop from './RamenAndClothShop'
 import ThreePictureGrid from './ThreePictureGrid'
 import Amenities from './Amenities'
 import Homes from './Homes'
+import Form from './Form'
+import Footer from './Footer'
 const Home = () => {  
   return (
     <>
@@ -21,8 +23,9 @@ const Home = () => {
     <ThreePictureGrid/>
     <Amenities/>
     <Homes/>
-    
     <RamenAndClothShop/>
+    <Form/>
+    <Footer/>
     </>
   )
 }

@@ -34,5 +34,8 @@ export const ASSETS = {
     OppositeArrows:'/icons/oppositeArrows.png',
     UpArrowsIcon:'/icons/upArrows.png',
     WorkingIcon:'/icons/workingMan.png',
-    
+    SinglePaperArrow:'/images/singlePaperArrow.png',
+    MapArrows:'/images/mapArrows.png',
+    WestwardDownArrowsLogo:'/images/westwardDownArrowsLogo.png',
+    IntracorpLogo:'/images/intracorpLogo.png',
 }
