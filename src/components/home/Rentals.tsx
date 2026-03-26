@@ -10,10 +10,9 @@ const Rentals = () => {
           src={ASSETS.Couple}
           alt="couple-image"
         />
-        <div className=" lg:bg-background-paper lg:w-[55%] h-44  "> </div>
+        <div className=" lg:bg-[rgba(247,208,166,0.37)] lg:w-[55%] h-44  "> </div>
       </div>
-
-      <div className=" lg:bg-background-paper  ">
+      <div className=" lg:bg-[rgba(247,208,166,0.37)]">
         <div className=" text-primary text-3xl lg:text-5xl font-semibold lg:w-full text-center lg:text-center pt-20 lg:pb-16 ">
           Modern Rentals, Classic Kerrisdale.
         </div>
@@ -41,7 +40,7 @@ const Rentals = () => {
               Explore Neighbourhood
             </div>
           </div>
-          <div className=" lg:w-[50%] w-full lg:pr-60 pr-4 pl-4 text-sm ">
+          <div className=" lg:w-[50%] font-charter w-full lg:pr-60 pr-4 pl-4 text-sm ">
             At West 49th and Vine, Westward blends Kerrisdale’s timeless charm
             with everyday convenience. Tree-lined streets, vibrant cafés and
             boutiques, top-rated schools, and expansive parks are all steps

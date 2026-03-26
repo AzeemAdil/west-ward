@@ -15,6 +15,10 @@ module.exports = {
         'text-primary': 'var(--text-primary)',
         'background-paper': 'var(--background-paper)',
       },
+      fontFamily: {
+        din: ['var(--font-urw-din)', 'sans-serif'],
+        charter: ['var(--font-charter)', 'serif'],
+      },
     },
   },
   plugins: [],

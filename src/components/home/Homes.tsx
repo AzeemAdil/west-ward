@@ -32,7 +32,7 @@ const Homes = () => {
             Timeless Comfort.
           </div>
 
-          <p className="text-primary/90 text-[15px] leading-relaxed mb-16 max-w-[400px]">
+          <p className="text-primary/90 text-[15px] font-charter leading-relaxed mb-16 max-w-[400px]">
             Created in collaboration with interior design studio Ste. Marie, 
             Westward homes blend style with everyday practicality. Bright 
             interiors and a neutral palette set the stage for you to make it 
@@ -54,7 +54,7 @@ const Homes = () => {
             <div className="flex w-[35%] flex-col gap-2 text-left">
               {highlights.map((item, index) => (
                 <div key={index} className="flex items-center gap-3 text-primary/80 font-medium leading-[1]">
-                  <img src={ASSETS.ArrowLeft} className="w-4 h-4 object-contain brightness-0 saturate-100" style={{ filter: 'invert(19%) sepia(87%) saturate(3048%) hue-rotate(352deg) brightness(85%) contrast(100%)' }} alt="indicator" />
+                  <img src={ASSETS.ArrowLeft} className="w-4 h-4 " alt="indicator" />
                   <span className="text-[17px] mt-[-2px]">{item}</span>
                 </div>
               ))}
@@ -86,7 +86,7 @@ const Homes = () => {
           Thoughtful Design. <br /> Timeless Comfort.
         </div>
         
-        <div className="text-gray-700 text-base leading-relaxed mb-16">
+        <div className="text-gray-700 text-base font-charter leading-relaxed mb-16">
           Created in collaboration with interior design studio Ste. Marie, Westward homes blend style with everyday practicality. Bright interiors and a neutral palette set the stage for you to make it your own, while natural light and thoughtful details make each space feel like home, for you and your four-legged friends.
         </div>
 

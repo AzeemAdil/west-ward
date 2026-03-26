@@ -38,4 +38,5 @@ export const ASSETS = {
     MapArrows:'/images/mapArrows.png',
     WestwardDownArrowsLogo:'/images/westwardDownArrowsLogo.png',
     IntracorpLogo:'/images/intracorpLogo.png',
+    FooterImage:'/images/footerImage.png'
 }

@@ -55,7 +55,7 @@ const Amenities = () => {
             <div className=" text-4xl text-primary font-medium pt-8 pb-16 ">
               Everything You Need. <br /> Right Where You Need It.
             </div>
-            <div className=" text-base pb-10 w-[60%] ">
+            <div className=" text-base pb-10 font-charter w-[60%] ">
               Work, unwind, or simply hang out, Westward’s amenities make every
               day feel a little brighter. From cozy corners to outdoor spaces,
               you’ll find living at Westward sparks connection, supports your
@@ -128,7 +128,7 @@ const Amenities = () => {
           <div className="text-primary text-4xl font-bold leading-tight mb-8">
             Everything You Need, <br /> Right Where You Need It.
           </div>
-          <div className="text-base text-gray-700 leading-relaxed mb-10">
+          <div className="text-base font-charter leading-relaxed mb-10">
             Work, unwind, or simply hang out, Westward’s amenities make every
             day feel a little brighter. From cozy corners to outdoor spaces,
             you’ll find living at Westward sparks connection, supports your
