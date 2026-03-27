@@ -1,10 +1,13 @@
-'use client';
+"use client";
 
-import React, { ReactNode, useEffect, useState } from 'react';
-import { ThemeProvider as MUIThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import { useTheme } from 'next-themes';
-import { getMuiColors } from './colors';
+import React, { ReactNode, useEffect, useState } from "react";
+import {
+  ThemeProvider as MUIThemeProvider,
+  createTheme,
+} from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import { useTheme } from "next-themes";
+import { getMuiColors } from "./colors";
 
 interface ThemeProviderProps {
   children: ReactNode;
@@ -13,14 +16,14 @@ interface ThemeProviderProps {
 export default function ThemeProvider({ children }: ThemeProviderProps) {
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const isDarkMode = resolvedTheme === 'dark';
+  const isDarkMode = resolvedTheme === "dark";
 
   // Create a theme instance with default values for SSR
   const createMuiTheme = () => {
     const muiColors = getMuiColors(isDarkMode);
     return createTheme({
       palette: {
-        mode: isDarkMode ? 'dark' : 'light',
+        mode: isDarkMode ? "dark" : "light",
         primary: {
           main: muiColors.primary,
         },
@@ -47,28 +50,27 @@ export default function ThemeProvider({ children }: ThemeProviderProps) {
           },
           styleOverrides: {
             root: {
-              borderWidth:"0.5px",
-              borderRadius: '50px',
+              borderWidth: "0.5px",
+              borderRadius: "50px",
               textTransform: "capitalize",
-              '&': {
-                textTransform: "capitalize"
-              }
-            }
-          }
-        },
-        MuiTextField:{
-          defaultProps:{
-            variant:"outlined",
-            color:"primary",
-            InputProps:{
-              sx:{
-                borderRadius:"18px"
-              }
-            }
+              "&": {
+                textTransform: "capitalize",
+              },
+            },
           },
-          
-        }
-      }
+        },
+        MuiTextField: {
+          defaultProps: {
+            variant: "outlined",
+            color: "primary",
+            InputProps: {
+              sx: {
+                borderRadius: "18px",
+              },
+            },
+          },
+        },
+      },
     });
   };
 
@@ -91,8 +93,8 @@ export default function ThemeProvider({ children }: ThemeProviderProps) {
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (
-          mutation.type === 'attributes' &&
-          mutation.attributeName === 'style' &&
+          mutation.type === "attributes" &&
+          mutation.attributeName === "style" &&
           mutation.target === document.documentElement
         ) {
           updateTheme();
@@ -100,7 +102,7 @@ export default function ThemeProvider({ children }: ThemeProviderProps) {
       });
     });
 
-    if (typeof window !== 'undefined') {
+    if (typeof window !== "undefined") {
       observer.observe(document.documentElement, { attributes: true });
     }
 
@@ -124,4 +126,4 @@ export default function ThemeProvider({ children }: ThemeProviderProps) {
       {children}
     </MUIThemeProvider>
   );
-} 
+}

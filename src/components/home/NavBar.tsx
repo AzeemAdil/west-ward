@@ -25,7 +25,7 @@ const NavBar = () => {
 
   return (
     <>
-      <nav 
+      <nav
         className="w-full bg-primary flex justify-center items-center  gap-4 lg:gap-48 text-[8px] md:text-sm "
         style={{ height: CONSTANTS.navWithListofTextHeight }}
       >
@@ -35,38 +35,38 @@ const NavBar = () => {
         </span>
         <span className="text-text-secondary">COMING SOON</span>
       </nav>
-      <nav 
+      <nav
         className="w-full bg-primary flex justify-center lg:hidden items-center"
         style={{ height: CONSTANTS.mobNavWithLogo }}
       >
-        <img
-          src={ASSETS.WestWard}
-          alt="west-ward"
-          className="w-[180px]"
-        />
+        <img src={ASSETS.WestWard} alt="west-ward" className="w-[180px]" />
       </nav>
-      <nav 
+      <nav
         ref={navRef}
         className=" w-full bg-background-paper flex justify-center items-center sticky top-0 z-50 transition-colors lg:hidden"
         style={{ height: CONSTANTS.mobNavSticky }}
       >
-        <span className="text-primary text-sm mt-[3px] mr-2 transition-all" >
-          {isSticky ? "REGISTER NOW" : "COMING SOON"}  
+        <span className="text-primary text-sm mt-[3px] mr-2 transition-all">
+          {isSticky ? "REGISTER NOW" : "COMING SOON"}
         </span>
-        <img src={ASSETS.ArrowLeft} className=" size-3" alt="arrow-left"  />
+        <img src={ASSETS.ArrowLeft} className=" size-3" alt="arrow-left" />
       </nav>
       <nav
         className="w-full bg-white hidden lg:flex  px-12 py-8  "
         style={{ height: CONSTANTS.desktopNav }}
       >
-        <div className="flex-1" >
-          <img src={ASSETS.WestWardLogoRed} alt="west-ward" className="h-full" />
+        <div className="flex-1">
+          <img
+            src={ASSETS.WestWardLogoRed}
+            alt="west-ward"
+            className="h-full"
+          />
         </div>
-        <div className="flex-1 flex justify-end items-center " >
-          <span className="text-primary text-lg mt-[3px] mr-4" >
-          REGISTER NOW  
-        </span>
-          <img src={ASSETS.ArrowLeft} className=" size-5" alt="arrow-left"  />
+        <div className="flex-1 flex justify-end items-center ">
+          <span className="text-primary text-lg mt-[3px] mr-4">
+            REGISTER NOW
+          </span>
+          <img src={ASSETS.ArrowLeft} className=" size-5" alt="arrow-left" />
         </div>
       </nav>
     </>

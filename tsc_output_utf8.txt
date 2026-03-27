@@ -1,0 +1,1 @@
+﻿src/common/configWrapper/index.tsx(17,63): error TS2339: Property 'favIcon' does not exist on type '{ Fav: string; Image: string; WestWardLogoRed: string; ArrowLeft: string; WestWard: string; WhiteArrow: string; VideoHeader: string; DownArrow: string; Couple: string; Bench: string; CircleText: string; ... 26 more ...; FooterImage: string; }'.

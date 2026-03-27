@@ -67,7 +67,7 @@ const LoginPage = () => {
 
   return (
     <div className="w-full h-[100svh] overflow-hidden overflow-y-scroll flex flex-col items-center justify-center pt-24 pb-10">
-      <div className="flex flex-col max-w-[500px] min-w-[300px] gap-2 justify-center overflow-hidden" >
+      <div className="flex flex-col max-w-[500px] min-w-[300px] gap-2 justify-center overflow-hidden">
         <Image
           src={ASSETS.americaImage}
           alt="logo"
@@ -166,25 +166,25 @@ const LoginPage = () => {
 
         <br />
         <Divider>
-					<p className="text-text-secondary text-lg">or</p>
-				</Divider>
-				<br />
+          <p className="text-text-secondary text-lg">or</p>
+        </Divider>
+        <br />
 
-				<Button
-					startIcon={<Google className="text-primary" />}
-					variant="outlined"
-					className="w-full h-14 border-text-secondary text-text-secondary"
-				>
-					<p className="text-text-primary text-lg">Continue with Google</p>
-				</Button>
+        <Button
+          startIcon={<Google className="text-primary" />}
+          variant="outlined"
+          className="w-full h-14 border-text-secondary text-text-secondary"
+        >
+          <p className="text-text-primary text-lg">Continue with Google</p>
+        </Button>
 
-				<Button
-					startIcon={<LinkedIn className="text-primary" />}
-					variant="outlined"
-					className="w-full h-14 border-text-secondary text-text-secondary"
-				>
-					<p className="text-text-primary text-lg">Continue with Linkedin</p>
-				</Button>
+        <Button
+          startIcon={<LinkedIn className="text-primary" />}
+          variant="outlined"
+          className="w-full h-14 border-text-secondary text-text-secondary"
+        >
+          <p className="text-text-primary text-lg">Continue with Linkedin</p>
+        </Button>
       </div>
     </div>
   );

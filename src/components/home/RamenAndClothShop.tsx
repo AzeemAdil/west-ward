@@ -3,14 +3,12 @@ import { ASSETS } from "@/helpers/assets";
 const RamenAndClothShop = () => {
   return (
     <>
-   
-
       <img
         className=" size-52 relative left-[5%] top-20 lg:left-[69%] lg:top-24 animate-[spin_10s_linear_infinite] "
         src={ASSETS.CircleText}
         alt="circle-text-image"
-        />
-      
+      />
+
       <div className="flex flex-col-reverse lg:flex-row justify-center items-center bg-primary ">
         <div className="w-full lg:w-[50%]">
           <img className="w-full" src={ASSETS.ClothShop} alt="cloth-shop" />

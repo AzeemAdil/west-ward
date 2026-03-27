@@ -42,22 +42,21 @@ const ThreePictureGrid = () => {
 
           {/* Right Column */}
           <div className="w-1/2 flex flex-col gap-[6px] pt-16">
-            <img 
-              src={ASSETS.Bakery} 
-              alt="bakery" 
-              className="w-full object-cover" 
+            <img
+              src={ASSETS.Bakery}
+              alt="bakery"
+              className="w-full object-cover"
             />
-            <img 
-              src={ASSETS.Cycle} 
-              alt="cycle" 
-              className="w-full object-cover" 
+            <img
+              src={ASSETS.Cycle}
+              alt="cycle"
+              className="w-full object-cover"
             />
           </div>
         </div>
       </div>
     </>
   );
-
 };
 
 export default ThreePictureGrid;

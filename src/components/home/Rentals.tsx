@@ -10,25 +10,35 @@ const Rentals = () => {
           src={ASSETS.Couple}
           alt="couple-image"
         />
-        <div className=" lg:bg-[rgba(247,208,166,0.37)] lg:w-[55%] h-44  "> </div>
+        <div className=" lg:bg-[rgba(247,208,166,0.37)] lg:w-[55%] h-44  ">
+          {" "}
+        </div>
       </div>
       <div className=" lg:bg-[rgba(247,208,166,0.37)]">
         <div className=" text-primary text-3xl lg:text-5xl font-semibold lg:w-full text-center lg:text-center pt-20 lg:pb-16 ">
           Modern Rentals, Classic Kerrisdale.
         </div>
         <img
-            className=" w-[30%] animate-[spin_10s_linear_infinite] relative top-8 left-16 lg:hidden  lg:relative lg:bottom-72 lg:left-32 "
-            src={ASSETS.CircleText}
-            alt="circle-text-image"
-          />
+          className=" w-[30%] animate-[spin_10s_linear_infinite] relative top-8 left-16 lg:hidden  lg:relative lg:bottom-72 lg:left-32 "
+          src={ASSETS.CircleText}
+          alt="circle-text-image"
+        />
         <div className=" flex justify-between items-center ">
           <img
             className=" w-[20%] hidden lg:block animate-[spin_10s_linear_infinite] relative bottom-28 left-10 lg:relative lg:bottom-72 lg:left-32 "
             src={ASSETS.CircleText}
             alt="circle-text-image"
           />
-          <img className="lg:w-[28%] w-[40%]" src={ASSETS.Bench} alt="bench-image" />
-          <img className="lg:w-[50%] w-[55%]" src={ASSETS.Flats} alt="flats-image" />
+          <img
+            className="lg:w-[28%] w-[40%]"
+            src={ASSETS.Bench}
+            alt="bench-image"
+          />
+          <img
+            className="lg:w-[50%] w-[55%]"
+            src={ASSETS.Flats}
+            alt="flats-image"
+          />
         </div>
         <div className=" flex justify-end flex-col lg:flex-row  items-center mt-16 ">
           <div className=" lg:w-[50%] w-full lg:pl-60 lg:relative pl-4 lg:bottom-28 ">

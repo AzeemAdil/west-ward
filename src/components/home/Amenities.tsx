@@ -145,7 +145,6 @@ const Amenities = () => {
             <button className="bg-primary text-white px-8 py-4 text-xs font-semibold tracking-widest uppercase">
               Amenities Gallery
             </button>
-            
           </div>
         </div>
 
@@ -175,7 +174,6 @@ const Amenities = () => {
         </div>
       </div>
     </>
-
   );
 };
 

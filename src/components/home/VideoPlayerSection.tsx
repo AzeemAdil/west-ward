@@ -40,9 +40,7 @@ const VideoPlayerSection = () => {
               Life in balance. <br /> Westward bound.
             </span>
             <br />
-            <p className="text-white text-sm pt-4 mr-4">
-              REGISTER NOW
-            </p>
+            <p className="text-white text-sm pt-4 mr-4">REGISTER NOW</p>
             <img
               className=" h-[74px] w-[30px] pt-8 "
               src={ASSETS.DownArrow}

@@ -5,26 +5,25 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-white py-12   l  g:py-10">
       <div className="w-[90%] mx-auto flex flex-col lg:flex-row lg:justify-between lg:items-center">
-        
         {/* Logo and Info Section */}
         <div className="flex flex-col lg:flex-row items-center  mb-12 lg:mb-0">
-          
           {/* Component 1: Westward Logo and Map Arrows */}
-         
+
           <div className="lg:hidden mb-10 w-full ">
-             <img src={ASSETS.WestwardDownArrowsLogo} alt="westward-logo" className=" relative top-40 right-5 " />
-             <img src={ASSETS.MapArrows} alt="map-arrows" className=" w-full" />
+            <img
+              src={ASSETS.WestwardDownArrowsLogo}
+              alt="westward-logo"
+              className=" relative top-40 right-5 "
+            />
+            <img src={ASSETS.MapArrows} alt="map-arrows" className=" w-full" />
           </div>
 
-
           <div className=" hidden lg:flex flex-col sm:flex-row items-center justify-center lg:justify-start mb-12 lg:mb-0">
-            <img 
-              src={ASSETS.WestwardDownArrowsLogo} 
-              alt="Westward Logo" />
-            <img 
-              src={ASSETS.MapArrows} 
+            <img src={ASSETS.WestwardDownArrowsLogo} alt="Westward Logo" />
+            <img
+              src={ASSETS.MapArrows}
               alt="Map Layout"
-              className="  lg:relative lg:right-48" 
+              className="  lg:relative lg:right-48"
             />
           </div>
 
@@ -40,8 +39,12 @@ const Footer = () => {
               <span className="text-sm font-bold tracking-widest uppercase opacity-80 mb-2 block">
                 Contact Us
               </span>
-              <div className="text-sm opacity-90 font-medium tracking-tight">xxx-xxx-xxxx</div>
-              <div className="text-sm opacity-90 font-medium tracking-tight">info@rentwestward.com</div>
+              <div className="text-sm opacity-90 font-medium tracking-tight">
+                xxx-xxx-xxxx
+              </div>
+              <div className="text-sm opacity-90 font-medium tracking-tight">
+                info@rentwestward.com
+              </div>
             </div>
 
             <div className="flex flex-col  font-charter ">
@@ -61,15 +64,9 @@ const Footer = () => {
         {/* Intracorp Logo Section */}
         <div className="flex flex-col items-center lg:items-end gap-6 border-t lg:border-t-0 border-white/10 pt-12 lg:pt-0">
           <div className="flex flex-col items-center lg:items-end">
-            
-             <img 
-               src={ASSETS.IntracorpLogo} 
-               alt="Intracorp" 
-             />
-            
+            <img src={ASSETS.IntracorpLogo} alt="Intracorp" />
           </div>
         </div>
-
       </div>
 
       {/* Disclaimer Section */}
@@ -84,7 +81,6 @@ const Footer = () => {
         </p>
       </div>
     </footer>
-
   );
 };
 
