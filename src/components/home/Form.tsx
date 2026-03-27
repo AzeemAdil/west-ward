@@ -6,18 +6,18 @@ const Form = () => {
     <div className="bg-[rgba(247,208,166,0.37)] py-20 px-6 lg:py-32 overflow-hidden">
       <div className="max-w-[1000px] mx-auto text-center">
         {/* Header Section */}
-        <div className="text-primary text-5xl mb-4 tracking-tight">
+        <div className="text-primary text-3xl font-semibold mb-4 tracking-tight">
           Be the first to know
         </div>
         <p className=" text-sm mb-6 font-medium">
           Register to receive the latest updates on Westward in Kerrisdale.
         </p>
-        <div className="flex rotate-90 justify-center mb-16">
+        <div className="flex -rotate-90 justify-center mb-16">
           <img src={ASSETS.RedArrows} alt="logo" className="w-20 h-auto" />
         </div>
 
         {/* Form Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-4 mb-4">
+        <div className="grid md:text-sm grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-4 mb-4">
           <input
             type="text"
             placeholder="First"
@@ -77,7 +77,7 @@ const Form = () => {
               className="w-6 h-6 appearance-none bg-[rgba(247,208,166,0.1)] border-2 border-primary checked:bg-primary  cursor-pointer transition-all relative after:content-[''] after:absolute after:hidden checked:after:block after:left-[7px] after:top-[2px] after:w-[6px] after:h-[12px] after:border-white after:border-b-2 after:border-r-2 after:rotate-45"
             />
           </div>
-          <p className="text-[8px] lg:text-sm font-charter leading-relaxed text-gray-800  opacity-90">
+          <p className="text-[12px] lg:text-sm font-charter leading-relaxed text-gray-800  opacity-90">
             By clicking this box, I hereby consent to receiving communications,
             promotional messages and other information from Intracorp and their
             respective current and future affiliates, including, without
@@ -99,7 +99,7 @@ const Form = () => {
             Privacy Policy
           </a>
 
-          <button className="flex items-center group transition-transform active:scale-95">
+          <button className="flex md:scale-75 items-center group transition-transform active:scale-95">
             <div className=" relative left-[70px] h-14 w-20 flex items-center justify-center">
               <img
                 src={ASSETS.SinglePaperArrow}

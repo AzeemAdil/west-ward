@@ -3,19 +3,23 @@ import { ASSETS } from "@/helpers/assets";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-12   l  g:py-10">
-      <div className="w-[90%] mx-auto flex flex-col lg:flex-row lg:justify-between lg:items-center">
+    <footer className="bg-primary text-white lg:py-10">
+      <div className="w-[100%] mx-auto flex md:flex-row md:justify-around md:items-center flex-col lg:flex-row lg:justify-between lg:items-center">
         {/* Logo and Info Section */}
-        <div className="flex flex-col lg:flex-row items-center  mb-12 lg:mb-0">
+        <div className="flex flex-col md:flex-row px-8 items-center  mb-12 lg:mb-0">
           {/* Component 1: Westward Logo and Map Arrows */}
 
-          <div className="lg:hidden mb-10 w-full ">
+          <div className="lg:hidden md:w-[35%] w-full ">
             <img
               src={ASSETS.WestwardDownArrowsLogo}
               alt="westward-logo"
-              className=" relative top-40 right-5 "
+              className=" relative md:right-2 md:scale-75 md:top-16 top-20 "
             />
-            <img src={ASSETS.MapArrows} alt="map-arrows" className=" w-full" />
+            <img
+              src={ASSETS.MapArrows}
+              alt="map-arrows"
+              className=" w-full relative md:scale-110 md:left-10 md:bottom-[50px] bottom-[100px] "
+            />
           </div>
 
           <div className=" hidden lg:flex flex-col sm:flex-row items-center justify-center lg:justify-start mb-12 lg:mb-0">
@@ -30,7 +34,7 @@ const Footer = () => {
           {/* Component 2: Contact/Location Info */}
           <div className=" relative lg:right-32 text-left flex flex-col gap-6 lg:gap-4">
             {/* Mobile-only "Coming Soon" text */}
-            <div className="lg:hidden text-[17px] font-medium opacity-90 leading-tight">
+            <div className="lg:hidden  text-[15px] md:w-[50%] md:mx-auto font-medium opacity-90 leading-tight">
               Leasing office and display homes coming soon
             </div>
 
@@ -47,14 +51,14 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="flex flex-col  font-charter ">
+            <div className="flex flex-col md:mx-auto   font-charter ">
               <span className="hidden lg:block text-sm font-bold tracking-widest uppercase opacity-80 mb-2">
                 Location
               </span>
-              <div className="text-[17px] lg:text-sm opacity-90 font-medium tracking-tight">
+              <div className="text-[15px]  lg:text-sm opacity-90 font-medium tracking-tight">
                 2325 West 49th Ave
               </div>
-              <div className="text-[17px] lg:text-sm opacity-90 font-medium tracking-tight">
+              <div className="text-[15px]  lg:text-sm opacity-90 font-medium tracking-tight">
                 Kerrisdale, Vancouver, BC
               </div>
             </div>
@@ -62,15 +66,15 @@ const Footer = () => {
         </div>
 
         {/* Intracorp Logo Section */}
-        <div className="flex flex-col items-center lg:items-end gap-6 border-t lg:border-t-0 border-white/10 pt-12 lg:pt-0">
-          <div className="flex flex-col items-center lg:items-end">
+        
+          <div className=" md:w-[30%] md:pr-10 ">
             <img src={ASSETS.IntracorpLogo} alt="Intracorp" />
           </div>
-        </div>
+        
       </div>
 
       {/* Disclaimer Section */}
-      <div className="w-[90%] mx-auto mt-12 lg:mt-16 pt-10 lg:pt-8">
+      <div className="w-[90%] mx-auto md:mt-0 mt-12 lg:mt-16 py-10 lg:pt-8">
         <p className=" text-sm leading-relaxed font-charter text-left ">
           This is not an offering for sale/lease. The developer reserves the
           right to make changes, modifications or substitutions to the design,

@@ -31,11 +31,11 @@ const ThreePictureGrid = () => {
           {/* Left Column */}
           <div className="w-1/2">
             <img src={ASSETS.Bus} alt="bus" className="w-full object-cover" />
-            <div className=" relative left-14 bottom-10">
+            <div className=" relative left-4  bottom-14">
               <img
                 src={ASSETS.RedArrows}
                 alt="red-arrows"
-                className="w-full max-w-[120px]"
+                className="w-full max-[120px]"
               />
             </div>
           </div>

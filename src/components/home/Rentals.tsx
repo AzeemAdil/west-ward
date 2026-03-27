@@ -15,7 +15,7 @@ const Rentals = () => {
         </div>
       </div>
       <div className=" lg:bg-[rgba(247,208,166,0.37)]">
-        <div className=" text-primary text-3xl lg:text-5xl font-semibold lg:w-full text-center lg:text-center pt-20 lg:pb-16 ">
+        <div className=" text-primary text-3xl lg:text-5xl font-semibold lg:w-full text-left mx-6 lg:text-center pt-20 lg:pb-16 ">
           Modern Rentals, Classic Kerrisdale.
         </div>
         <img
@@ -35,7 +35,7 @@ const Rentals = () => {
             alt="bench-image"
           />
           <img
-            className="lg:w-[50%] w-[55%]"
+            className="lg:w-[50%] w-[58%] h-[100%] "
             src={ASSETS.Flats}
             alt="flats-image"
           />

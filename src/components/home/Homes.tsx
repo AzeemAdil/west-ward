@@ -92,7 +92,7 @@ const Homes = () => {
             Thoughtful Design. <br /> Timeless Comfort.
           </div>
 
-          <div className=" text-base font-charter leading-relaxed  mb-16">
+          <div className=" text-base font-charter   mb-10">
             Created in collaboration with interior design studio Ste. Marie,
             Westward homes blend style with everyday practicality. Bright
             interiors and a neutral palette set the stage for you to make it
@@ -101,10 +101,10 @@ const Homes = () => {
           </div>
 
           <div className="mb-12">
-            <div className="text-primary tracking-[0.2em]  text-xs mb-10 uppercase">
+            <div className="text-primary tracking-[0.2em]  text-xs mb-7 uppercase">
               Home Highlights
             </div>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-2">
               {highlights.map((item, index) => (
                 <div key={index} className="flex items-center gap-6">
                   <img
@@ -112,7 +112,7 @@ const Homes = () => {
                     className="w-4  "
                     alt="indicator"
                   />
-                  <span className=" font-charter text-base mt-[-2px]">{item}</span>
+                  <span className=" font-charter ">{item}</span>
                 </div>
               ))}
             </div>
@@ -125,15 +125,15 @@ const Homes = () => {
           </div>
         </div>
         {/* Staggered Images Section */}
-        <div className="relative pb-20">
-          <div className="w-[75%] relative z-0">
+        <div className="relative pb-10">
+          <div className="w-[65%] relative z-0">
             <img
               src={ASSETS.BlueSofa}
               alt="modern living room"
               className="w-full h-auto shadow-xl"
             />
           </div>
-          <div className="w-[75%] ml-auto mt-[-45%] relative z-10 ">
+          <div className="w-[65%] ml-auto mt-[-20%] relative z-10 ">
             <img
               src={ASSETS.Kitchen}
               alt="modern kitchen"

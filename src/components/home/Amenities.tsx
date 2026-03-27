@@ -125,7 +125,7 @@ const Amenities = () => {
           <div className="text-primary tracking-[.3em] text-xs font-semibold mb-6 uppercase">
             Amenities
           </div>
-          <div className="text-primary text-4xl font-bold leading-tight mb-8">
+          <div className="text-primary text-3xl font-bold leading-tight mb-8">
             Everything You Need, <br /> Right Where You Need It.
           </div>
           <div className="text-base font-charter leading-relaxed mb-10">
@@ -160,7 +160,7 @@ const Amenities = () => {
                 <img
                   src={item.icon}
                   alt={item.title}
-                  className="w-12 h-12 mb-6"
+                  className=" mb-6"
                 />
                 <h3 className="text-white text-lg font-bold tracking-[0.2em] mb-4 uppercase">
                   {item.title}
