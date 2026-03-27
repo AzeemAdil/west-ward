@@ -16,7 +16,7 @@ const RamenAndClothShop = () => {
         <div className=" lg:w-[50%] lg:h-full h-[440px] w-full flex justify-center items-center ">
           <div>
             <img
-              className=" lg:w-[50%] w-1/2 h-1/2 my-auto m-auto "
+              className=" lg:w-[50%] w-1/2 h-auto my-auto m-auto "
               src={ASSETS.Ramen}
               alt="ramen"
             />

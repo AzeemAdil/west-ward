@@ -13,7 +13,7 @@ const Homes = () => {
   return (
     <div className="bg-white py-20 lg:py-40">
       {/* desktop */}
-      <div className="hidden lg:flex px-6 lg:px-10 flex-row justify-between items-center gap-10 relative lg:gap-0">
+      <div className="hidden lg:flex  flex-row justify-between items-center relative lg:gap-0">
         <div className="lg:w-[30%] h-[100vh] relative top-32 w-full">
           <img
             src={ASSETS.BlueSofa}
@@ -27,12 +27,12 @@ const Homes = () => {
             Homes
           </div>
 
-          <div className="text-primary text-4xl lg:text-5xl font-medium leading-[1.1] mb-8">
+          <div className="text-primary text-3xl lg:text-5xl font-medium leading-[1.1] mb-8 px-4 ">
             Thoughtful Design. <br />
             Timeless Comfort.
           </div>
 
-          <p className="text-primary/90 text-[15px] font-charter leading-relaxed mb-16 max-w-[400px]">
+          <p className=" text-base px-4 font-charter leading-relaxed mb-16">
             Created in collaboration with interior design studio Ste. Marie,
             Westward homes blend style with everyday practicality. Bright
             interiors and a neutral palette set the stage for you to make it
@@ -59,10 +59,10 @@ const Homes = () => {
                 >
                   <img
                     src={ASSETS.ArrowLeft}
-                    className="w-4 h-4 "
+                    className="w-4  "
                     alt="indicator"
                   />
-                  <span className="text-[17px] mt-[-2px]">{item}</span>
+                  <span className=" font-charter text-base mt-[-2px]">{item}</span>
                 </div>
               ))}
             </div>
@@ -88,11 +88,11 @@ const Homes = () => {
           <div className="mb-6 text-primary tracking-[.4em] text-xs font-semibold uppercase">
             Homes
           </div>
-          <div className="text-primary text-4xl font-bold leading-tight mb-8">
+          <div className="text-primary text-4xl font-bold leading-tight  mb-8">
             Thoughtful Design. <br /> Timeless Comfort.
           </div>
 
-          <div className="text-gray-700 text-base font-charter leading-relaxed mb-16">
+          <div className=" text-base font-charter leading-relaxed  mb-16">
             Created in collaboration with interior design studio Ste. Marie,
             Westward homes blend style with everyday practicality. Bright
             interiors and a neutral palette set the stage for you to make it
@@ -107,10 +107,12 @@ const Homes = () => {
             <div className="flex flex-col gap-4">
               {highlights.map((item, index) => (
                 <div key={index} className="flex items-center gap-6">
-                  <img src={ASSETS.ArrowLeft} alt="indicator" />
-                  <span className=" text-[18px] leading-tight font-medium">
-                    {item}
-                  </span>
+                  <img
+                    src={ASSETS.ArrowLeft}
+                    className="w-4  "
+                    alt="indicator"
+                  />
+                  <span className=" font-charter text-base mt-[-2px]">{item}</span>
                 </div>
               ))}
             </div>
