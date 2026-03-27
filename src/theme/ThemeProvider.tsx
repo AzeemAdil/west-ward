@@ -1,6 +1,6 @@
 "use client";
 
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { ReactNode, useEffect, useState, useCallback } from "react";
 import {
   ThemeProvider as MUIThemeProvider,
   createTheme,
@@ -19,7 +19,7 @@ export default function ThemeProvider({ children }: ThemeProviderProps) {
   const isDarkMode = resolvedTheme === "dark";
 
   // Create a theme instance with default values for SSR
-  const createMuiTheme = () => {
+  const createMuiTheme = useCallback(() => {
     const muiColors = getMuiColors(isDarkMode);
     return createTheme({
       palette: {
@@ -72,7 +72,7 @@ export default function ThemeProvider({ children }: ThemeProviderProps) {
         },
       },
     });
-  };
+  }, [isDarkMode]);
 
   // Initial theme
   const [theme, setTheme] = useState(createMuiTheme());
@@ -109,7 +109,7 @@ export default function ThemeProvider({ children }: ThemeProviderProps) {
     return () => {
       observer.disconnect();
     };
-  }, [mounted, resolvedTheme]);
+  }, [mounted, resolvedTheme, createMuiTheme]);
 
   // To avoid hydration mismatch, only show the theme after mounting
   useEffect(() => {
