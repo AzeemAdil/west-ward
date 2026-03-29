@@ -52,7 +52,7 @@ const Amenities = () => {
         <div className=" flex justify-end h-[100vh] items-center">
           <div className="w-[35%] relative bottom-64 ">
             <div className=" text-primary text-3xl ">A M E N I T I E S</div>
-            <div className=" text-4xl text-primary font-medium pt-8 pb-16 ">
+            <div className=" text-4xl text-primary font-semibold pt-8 pb-16 ">
               Everything You Need. <br /> Right Where You Need It.
             </div>
             <div className=" text-base pb-10 font-charter w-[60%] ">
@@ -66,7 +66,7 @@ const Amenities = () => {
             </button>
           </div>
 
-          <div className="w-[50%] bg-primary relative top-8 h-[120vh] z-50 ">
+          <div className="w-[50%] bg-primary relative top-20 h-[120vh] z-50 ">
             <img
               className="w-full relative top-32 right-28 shadow-2xl"
               src={ASSETS.LivingRoom}
@@ -83,11 +83,11 @@ const Amenities = () => {
         <div className="relative w-full">
           {/* Background Image Container with Overlay */}
           <div
-            className="relative w-full h-auto py-32 bg-cover bg-center"
+            className="relative w-full h-[100vh] py-32 bg-cover bg-center"
             style={{ backgroundImage: `url(${ASSETS.TVlounge})` }}
           >
             {/* Darkish tint overlay */}
-            <div className="absolute inset-0 bg-[#333]/50"></div>
+            <div className="absolute inset-0 bg-[#333]/70"></div>
 
             {/* Grid Content */}
             <div className="relative z-10 max-w-[1200px] mx-auto pt-20 px-6">
@@ -101,7 +101,7 @@ const Amenities = () => {
                       <img
                         src={item.icon}
                         alt={item.title}
-                        className="w-8 h-8 object-contain"
+                        className=" size-10 object-contain"
                       />
                     </div>
                     <div className="text-lg text-white font-semibold tracking-widest mb-4 uppercase">

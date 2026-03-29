@@ -11,14 +11,14 @@ const Homes = () => {
   ];
 
   return (
-    <div className="bg-white py-20 lg:py-40">
+    <div className="bg-white py-20 md:py-10 lg:py-40">
       {/* desktop */}
       <div className="hidden lg:flex  flex-row justify-between items-center relative lg:gap-0">
-        <div className="lg:w-[30%] h-[100vh] relative top-32 w-full">
+        <div className="lg:w-[30%] lg:h-[90vh] relative top-32 w-full">
           <img
             src={ASSETS.BlueSofa}
             alt="thoughtful home design"
-            className="w-full object-cover shadow-lg"
+            className="w-full object-cover lg:h-[100vh] shadow-lg"
           />
         </div>
 
@@ -32,7 +32,7 @@ const Homes = () => {
             Timeless Comfort.
           </div>
 
-          <p className=" text-base px-4 font-charter leading-relaxed mb-16">
+          <p className=" text-base lg:px-10 px-4 font-charter leading-relaxed mb-16">
             Created in collaboration with interior design studio Ste. Marie,
             Westward homes blend style with everyday practicality. Bright
             interiors and a neutral palette set the stage for you to make it
@@ -40,7 +40,7 @@ const Homes = () => {
             feel like home, for you and your four-legged friends.
           </p>
 
-          <div className="w-full flex justify-center items-start gap-10 mb-20 translate-x-4">
+          <div className="w-full flex justify-center items-start gap-10 mb-20">
             {/* Left side of highlights - The Title */}
             <div className="relative pt-4">
               <div className="absolute top-0 left-0 w-24 h-[1px] bg-primary"></div>
@@ -73,7 +73,7 @@ const Homes = () => {
           </button>
         </div>
 
-        <div className="lg:w-[30%] w-full h-[100vh] relative bottom-32 flex justify-end">
+        <div className="lg:w-[30%] w-full lg:h-[90vh] relative bottom-32 flex justify-end">
           <img
             src={ASSETS.Kitchen}
             alt="kitchen design"
@@ -82,17 +82,27 @@ const Homes = () => {
         </div>
       </div>
 
-      {/* mobile */}
-      <div className="lg:hidden  pt-10">
-        <div className="px-6">
-          <div className="mb-6 text-primary tracking-[.4em] text-xs font-semibold uppercase">
+      {/* mobile & tablet */}
+      <div className="lg:hidden pt-10 flex flex-col md:items-center">
+        <div className="px-6 md:px-20 md:text-center flex flex-col md:items-center w-full">
+          
+          {/* Picture 1 for Tablet - Now at Top */}
+          <div className="hidden md:block w-[70%] max-w-2xl md:mb-8 mb-16">
+            <img
+              src={ASSETS.BlueSofa}
+              alt="modern living room"
+              className="w-full md:h-[300px] h-auto object-cover shadow-xl"
+            />
+          </div>
+
+          <div className="mb-6 text-primary tracking-[.4em] text-xs md:text-2xl font-semibold uppercase">
             Homes
           </div>
-          <div className="text-primary text-4xl font-bold leading-tight  mb-8">
+          <div className="text-primary text-4xl md:text-3xl font-bold leading-tight mb-8">
             Thoughtful Design. <br /> Timeless Comfort.
           </div>
 
-          <div className=" text-base font-charter   mb-10">
+          <div className="text-base font-charter mb-10 md:mb-5 md:max-w-2xl">
             Created in collaboration with interior design studio Ste. Marie,
             Westward homes blend style with everyday practicality. Bright
             interiors and a neutral palette set the stage for you to make it
@@ -100,32 +110,42 @@ const Homes = () => {
             feel like home, for you and your four-legged friends.
           </div>
 
-          <div className="mb-12">
-            <div className="text-primary tracking-[0.2em]  text-xs mb-7 uppercase">
+          <div className="mb-12 md:mb-6 md:max-w-xl">
+            <div className="text-primary tracking-[0.2em] text-xs md:text-[10px] mb-7 uppercase md:text-center">
               Home Highlights
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 items-start">
               {highlights.map((item, index) => (
                 <div key={index} className="flex items-center gap-6">
                   <img
                     src={ASSETS.ArrowLeft}
-                    className="w-4  "
+                    className="w-4"
                     alt="indicator"
                   />
-                  <span className=" font-charter ">{item}</span>
+                  <span className="font-charter">{item}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="inline-flex items-center relative mb-20">
+          {/* Picture 2 for Tablet - Now below content */}
+          <div className="hidden md:block w-[70%] max-w-2xl md:mb-8 mb-16">
+            <img
+              src={ASSETS.Kitchen}
+              alt="modern kitchen"
+              className="w-full md:h-[300px] h-auto object-cover shadow-2xl"
+            />
+          </div>
+
+          <div className="inline-flex items-center relative mb-20 md:mb-10">
             <button className="bg-primary text-white px-12 py-4 text-xs font-bold tracking-widest uppercase shadow-md">
               Homes
             </button>
           </div>
         </div>
-        {/* Staggered Images Section */}
-        <div className="relative pb-10">
+
+        {/* Staggered Images Section for Mobile only */}
+        <div className="relative pb-10 md:hidden">
           <div className="w-[65%] relative z-0">
             <img
               src={ASSETS.BlueSofa}

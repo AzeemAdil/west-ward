@@ -21,7 +21,7 @@ const VideoPlayerSection = () => {
         style={{ height: containerHeight }}
       >
         {/* Video Wrapper */}
-        <div className="w-full h-[45svh] lg:h-[90%] relative ">
+        <div className="w-full h-[45svh] md:h-[90%] relative ">
           <video
             src={ASSETS.VideoHeader}
             autoPlay
@@ -41,7 +41,7 @@ const VideoPlayerSection = () => {
           </div>
 
           {/* Overlay Box - Desktop Only */}
-          <div className="hidden lg:flex flex-col justify-center opacity-90 w-[350px] h-[300px] bg-primary absolute left-16 bottom-[-60px] p-10 z-20">
+          <div className="hidden md:flex flex-col justify-center opacity-90 lg:w-[450px] md:scale-75 md:left-2 lg:h-[450px] bg-primary absolute left-16 lg:bottom-[-120px] bottom-[-80px] p-10 z-20">
             <h1 className="font-bold text-4xl text-white leading-tight mb-6">
               Life in balance. <br /> Westward bound.
             </h1>
@@ -49,7 +49,7 @@ const VideoPlayerSection = () => {
               REGISTER NOW
             </div>
             <img
-              className="h-[70px] w-auto self-start transform -translate-x-2"
+              className="h-[90px] w-auto self-start transform -translate-x-2"
               src={ASSETS.DownArrow}
               alt="Scroll down"
             />
@@ -57,7 +57,7 @@ const VideoPlayerSection = () => {
         </div>
 
         {/* Mobile Info Section (Appears below the 50svh video) */}
-        <div className="lg:hidden flex flex-col pt-4 pb-5">
+        <div className="md:hidden flex flex-col pt-4 pb-5">
           <h2 className="font-bold text-primary text-2xl mb-2 leading-snug">
             Life in balance. <br /> Westward bound.
           </h2>

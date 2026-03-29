@@ -8,13 +8,13 @@ const ThreePictureGrid = () => {
       <div className="hidden lg:block">
         <div className=" flex items-center justify-between pb-40">
           <img
-            className=" w-[32%] relative top-32 "
+            className=" w-[33%] relative top-32 "
             src={ASSETS.Cycle}
             alt="cycle"
           />
-          <img className=" w-[32%]" src={ASSETS.Bakery} alt="bakery" />
+          <img className=" w-[33%]" src={ASSETS.Bakery} alt="bakery" />
 
-          <div className=" w-[32%] relative top-80 ">
+          <div className=" w-[33%] relative top-80 ">
             <img src={ASSETS.Bus} alt="bus" />
             <img
               className=" relative bottom-40"
@@ -31,7 +31,7 @@ const ThreePictureGrid = () => {
           {/* Left Column */}
           <div className="w-1/2">
             <img src={ASSETS.Bus} alt="bus" className="w-full object-cover" />
-            <div className=" relative left-4  bottom-14">
+            <div className=" relative left-4 md:bottom-36  bottom-14">
               <img
                 src={ASSETS.RedArrows}
                 alt="red-arrows"

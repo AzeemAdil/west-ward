@@ -5,7 +5,7 @@ const Map = () => {
   return (
     <div>
       <img
-        className="w-full lg:bg-[rgba(247,208,166,0.37)]"
+        className="w-full md:bg-[rgba(247,208,166,0.37)]"
         src={ASSETS.Map}
         alt="map-image"
       />

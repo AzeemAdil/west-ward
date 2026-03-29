@@ -3,13 +3,13 @@ import { ASSETS } from "@/helpers/assets";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white lg:py-10">
-      <div className="w-[100%] mx-auto flex md:flex-row md:justify-around md:items-center flex-col lg:flex-row lg:justify-between lg:items-center">
+    <footer className="bg-primary text-white lg:py-5">
+      <div className="w-[100%] mx-auto flex md:flex-row md:justify-around md:items-center flex-col lg:flex-row lg:justify-around lg:items-center">
         {/* Logo and Info Section */}
         <div className="flex flex-col md:flex-row px-8 items-center  mb-12 lg:mb-0">
           {/* Component 1: Westward Logo and Map Arrows */}
 
-          <div className="lg:hidden md:w-[35%] w-full ">
+          <div className="lg:hidden md:w-[35%] w-full overflow-hidden">
             <img
               src={ASSETS.WestwardDownArrowsLogo}
               alt="westward-logo"
@@ -22,7 +22,7 @@ const Footer = () => {
             />
           </div>
 
-          <div className=" hidden lg:flex flex-col sm:flex-row items-center justify-center lg:justify-start mb-12 lg:mb-0">
+          <div className=" hidden lg:flex flex-col sm:flex-row items-center justify-center lg:justify-start mb-12 lg:mb-0 overflow-hidden">
             <img src={ASSETS.WestwardDownArrowsLogo} alt="Westward Logo" />
             <img
               src={ASSETS.MapArrows}

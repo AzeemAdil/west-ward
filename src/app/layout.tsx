@@ -78,7 +78,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" suppressHydrationWarning>
-			<body className={`${charter.variable} ${urwDin.className} antialiased`} suppressHydrationWarning>
+			<body className={`${charter.variable} ${urwDin.className} antialiased overflow-x-hidden`} suppressHydrationWarning>
 				<ConfigWrapper>
 					{children}
 				</ConfigWrapper>
